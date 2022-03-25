@@ -58,6 +58,12 @@ class MyHomePage extends StatelessWidget {
             );
           }
 
+          if (state is UserErrorState) {
+            return const Center(
+              child: Text('Error'),
+            );
+          }
+
           return const Center(child: Text('State is not defined'));
         },
       ),
